@@ -1,0 +1,74 @@
+/* Css for Calculator */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 22px;
+}
+
+.header {
+    font-size:1.3em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: none;
+    padding: 30px;
+}
+
+.calc-frame {
+        padding: 30px;
+        background-color: #000000;
+        border-radius:20px; 
+        box-shadow: 11px 9px 62px -3px rgba(22, 19, 19, 0.45);
+}
+
+.calc-output{
+    border: 30px;
+    padding:10;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+}
+
+input{
+    grid-column: span 4;
+    height: 200px;
+    box-shadow: -11px -9px -62px 3px rgba(247, 226, 226, 0.45);
+    background-color: #161616;
+    border:none;
+    outline: none;
+    border-radius:10px;
+    color: #f5f5f5;
+    text-align:end;
+    margin: 30px 0px 30px 0px;
+    font-size:2.0em;
+}
+
+button{
+    margin: 10px;
+    box-shadow: 6px 6px 13px #000000, 6px 6px 13px rgba(235, 221, 221, 0.18);
+    background-color: #161616;
+    border:none;
+    border-radius:50%;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+.cancel{
+    color: red;
+}
+
+.del{
+    color: chocolate;
+}
+.arithmetic{
+    color: green;
+}
+.equal{
+    background-color:green;
+}
