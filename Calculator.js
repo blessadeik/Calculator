@@ -1,28 +1,29 @@
 // JavaScript for Calculator
+ 
 
-// add
-function add(number){
-    return number + number;
+let result=document.getElementById("calc-input");
+
+let calculate=(number)=>{
+    result.value+=number;
 }
-console.log(add(value));
-
-
-// multiply
-function multiply(number){
-    return number * value;
+let square=(number)=>{
+    result.value*=number;
 }
-console.log(multiply(number));
 
-// subtract
-function subtract(number){
-    return number - number;
+let Result=()=>{
+    try{
+        result.value=eval(result.value)
+    }
+    catch(err){
+        alert("invalid");
+    }
 }
-console.log(subtract(value));
 
-// divide
-function divide(number){
-    return number / value;
+function clear(){
+    result.value=" ";
 }
-console.log(divide(value));
 
-// 
+function del(){
+    result.value=result.value.slice(0, -1);
+}
+
