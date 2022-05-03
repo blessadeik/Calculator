@@ -19,9 +19,10 @@ let Calc=()=>{
     }
 }
 
-function clr(){
-    calc.value="0";
+function clear(){
+    calc.value=("0");
 }
+
 
 function del(){
     calc.value=calc.value.slice(0, -1);

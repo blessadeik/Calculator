@@ -89,6 +89,11 @@ button{
     height: 70px;
     font-weight: bold;
     color: #c6b8b8;
+    cursor:pointer;
+}
+
+button:active{
+    font-size: 18px;
 }
 .clear{
     color: red;
