@@ -13,11 +13,25 @@ body{
 .main{
     display: grid;
 }
-
+.all{
+    margin: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 .header {
-    font-size:1.3em;
+    display:flex;
+    text-align:center;
+    font-weight: bolder;
+    align-items: center; 
+    background: #8cd2e8;
 }
 
+.header p{
+    font-size:2.7em;
+    color:#3A7BD5;
+    justify-content:center;
+    text-shadow: 6px 6px 12px rgba(131, 151, 216, 0.42);
+}
 .container{
     display: flex;
     align-items: center;
@@ -25,6 +39,7 @@ body{
     box-sizing: border-box;
     outline: none;
     padding: 30px;
+    background-color: #3A7BD5;
 }
 
 .calc-frame {

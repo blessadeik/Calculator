@@ -1,29 +1,28 @@
 // JavaScript for Calculator
  
 
-let result=document.getElementById("calc-input");
+let calc=document.getElementById("calc-input");
 
 let calculate=(number)=>{
-    result.value+=number;
+    calc.value+=number;
 }
 let square=(number)=>{
-    result.value*=number;
+    calc.value*=number;
 }
 
-let Result=()=>{
+let Calc=()=>{
     try{
-        result.value=eval(result.value)
+        calc.value=eval(calc.value)
     }
     catch(err){
-        alert("invalid");
+        calc.value=("invalid");
     }
 }
 
-function clear(){
-    result.value=" ";
+function clr(){
+    calc.value="0";
 }
 
 function del(){
-    result.value=result.value.slice(0, -1);
+    calc.value=calc.value.slice(0, -1);
 }
-

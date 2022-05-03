@@ -13,35 +13,43 @@
 
     
 </head>
-<body>
-    <div class="header"> CALCULATOR</div>
-    <div class="container">
-        <div class="calc-frame">
-            <div class="calc-output">
-                <input type="text" id="calc-input" placeholder="0">
-                <button onclick="clear()" class="clear">C</button>
-                <button onclick="del()" class="del">DEL</button>
-                <button onclick="calculate('%')" class="arithmetic">%</button>
-                <button onclick="calculate('/')" class="arithmetic">/</button>
-                <button onclick="calculate(7)">7</button>
-                <button onclick="calculate(8)">8</button>
-                <button onclick="calculate(9)">9</button>
-                <button onclick="calculate('*')" class="arithmetic">*</button>
-                <button onclick="calculate(4)">4</button>
-                <button onclick="calculate(5)">5</button>
-                <button onclick="calculate(6)">6</button>
-                <button onclick="calculate('-')" class="arithmetic">-</button>
-                <button onclick="calculate(1)">1</button>
-                <button onclick="calculate(2)">2</button>
-                <button onclick="calculate(3)">3</button>
-                <button onclick="calculate('+')" class="arithmetic">+</button>
-                <button onclick="square()" class="arithmetic">X<sup>2</sup></button>
-                <button onclick="calculate(0)">0</button>
-                <button onclick="calculate('.')">.</button>
-                <button class="equal" onclick="Result()">=</button>
-            <script src="Calculator.js"></script>
-            </div>
-        </div>    
+<body >
+    <div class="all">
+
+        <div class="header"> <p>SIMPLE CALCULATOR BY BLESSADEIK</p> </div>
+        <div class="container">
+            <div class="calc-frame">
+                <div class="calc-output">
+                    <input type="text" id="calc-input" placeholder="0">
+                    <button onclick="clear()" class="clear">C</button>
+                    <button onclick="del()" class="del">DEL</button>
+                    <button onclick="calculate('%')" class="arithmetic">%</button>
+                    <button onclick="calculate('/')" class="arithmetic">/</button>
+                    <button onclick="calculate(7)">7</button>
+                    <button onclick="calculate(8)">8</button>
+                    <button onclick="calculate(9)">9</button>
+                    <button onclick="calculate('*')" class="arithmetic">*</button>
+                    <button onclick="calculate(4)">4</button>
+                    <button onclick="calculate(5)">5</button>
+                    <button onclick="calculate(6)">6</button>
+                    <button onclick="calculate('-')" class="arithmetic">-</button>
+                    <button onclick="calculate(1)">1</button>
+                    <button onclick="calculate(2)">2</button>
+                    <button onclick="calculate(3)">3</button>
+                    <button onclick="calculate('+')" class="arithmetic">+</button>
+                    <button onclick="square()" class="arithmetic">X<sup>2</sup></button>
+                    <button onclick="calculate(0)">0</button>
+                    <button onclick="calculate('.')">.</button>
+                    <button class="equal" onclick="Calc()">=</button>
+                <script src="Calculator.js"></script>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="">
+        <p class="detail">Simple Calculator</p>
+       
     </div>
 </body>
 </html>
