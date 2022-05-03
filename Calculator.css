@@ -18,6 +18,15 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+
+@media screen and (max-width: 960px){
+    .all{
+        grid-template-columns:1fr;
+    }
+    .header{
+        height: 100vh;
+    }
+}
 .header {
     display:flex;
     text-align:center;
@@ -38,7 +47,7 @@ body{
     justify-content: center;
     box-sizing: border-box;
     outline: none;
-    padding: 30px;
+    padding: 100px;
     background-color: #3A7BD5;
 }
 
